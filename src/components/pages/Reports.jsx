@@ -275,9 +275,9 @@ const quickReports = [
                             <div>
                               <p className="text-xs text-gray-600">Ending in 60 days</p>
                               <p className="text-lg font-semibold text-yellow-600">{generatedReport.contractAnalysis.endingIn60Days}</p>
-                            </div>
+</div>
                             <div>
-                              <p className="text-xs text-gray-600">Long-term (>90 days)</p>
+                              <p className="text-xs text-gray-600">Long-term (&gt;90 days)</p>
                               <p className="text-lg font-semibold text-green-600">{generatedReport.contractAnalysis.longTerm}</p>
                             </div>
                           </div>
