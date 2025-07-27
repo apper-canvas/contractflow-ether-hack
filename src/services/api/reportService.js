@@ -1,5 +1,4 @@
 import reportsData from "@/services/mockData/reports.json";
-import React from "react";
 import { timesheetService } from "@/services/api/timesheetService";
 import { contractorService } from "@/services/api/contractorService";
 
@@ -11,7 +10,7 @@ export const reportService = {
     return { ...reportsData };
   },
 
-async generateReport(type, params) {
+  async generateReport(type, params) {
     await delay(500);
     return {
       success: true,
@@ -115,9 +114,9 @@ async generateReport(type, params) {
         endingIn30Days,
         endingIn60Days,
         longTerm
-      }
+}
     };
-},
+  },
 
   async generateBudgetAnalysis() {
     await delay(800);
@@ -226,6 +225,7 @@ budgetUtilization
       }
     };
   },
+
   async generatePerformanceMetrics() {
     await delay(800);
     
@@ -389,5 +389,6 @@ budgetUtilization
         qualityScore: avgEfficiency,
         clientSatisfaction: Math.min(95, avgEfficiency + Math.floor(Math.random() * 10)) // Mock client satisfaction
       }
-    };
+};
   }
+};
